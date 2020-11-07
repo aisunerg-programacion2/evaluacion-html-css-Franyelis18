@@ -1,0 +1,48 @@
+*  {
+    margin: 8px;
+    padding: 3;
+}
+
+h1 {
+    font: bold 50px sans-serif;
+}
+
+h2 {
+    font: bold 30px sans-serif;
+}
+
+h3 {
+    font: bold 20px sans-serif;
+}
+
+body {
+    text-align: justify;
+    background: #70d09d; 
+}
+
+.agrupar {
+    background: #0269ef;
+    width: 900px;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+.titulo {
+   background: #00bee8;
+   color: rgb(247, 247, 247);
+   border: 1px solid gray;
+   padding: 30px;
+}
+
+.menu {
+    font: bold 15px sans-serif;
+    background-color: gainsboro;
+    display: inline-flex;
+}
+
+.lista li {
+    color: black;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: auto;
+}

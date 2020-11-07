@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Etiquetas para numeración y viñetas</title>
+      <meta name="description" content="Etiquetas de texto en HTML"/>
+      <meta name="author" content="Franyelis Rodriguez"/>
+      <meta name="keywords" content="Etiquetas de texto html"/> 
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body> 
+
+        <div class="agrupar">
+            
+         <h1 class="titulo">HTML5 y sus características.</h1>
+            
+          <nav class="menu">
+             <a href="Index.html">HTML5 y sus características</a>
+             <br>
+             <a href="Etiquetas de texto en html.html">Formato de texto en HTML</a>
+             <br>
+             <a href="Etiquetas de encabezados y ubicación html.html">Encabezados y Ubicación</a>
+             <br>
+             <a href="Etiquetas para Tablas.html">Tablas en HTML</a>
+             <br>
+             <a href="Etiquetas para numeración y viñetas.html">Numeración y Viñetas en HTML</a>
+             <br>
+             <a href="Etiquetas para formularios y carga de datos en html.html">Formularios y carga de datos en HTML</a>
+           </nav>
+             
+    
+         <h3><i>También podría interesarte las páginas web mencionada arriba ya que contienen más información importante de HTML</i></h3>
+
+    
+          <h1>Etiquetas para enumeración y viñetas</h1>
+         <h2>Cómo poner enumeración en listas de HTML</h2>
+         <p>La creación de la numeración y vinetas en HTML, se realiza atraves de listas ordenadas estas son elementos muy importantes de alto significado semántico. Una lista ordenada en HTML es aquella en la que los elementos estan enumerados o marcado con algún signo alfanumérico que indique el orden de los elementos. Con el apoyo de las siguentes etiquetas podemos añadir la numeración y viñetas.</p>
+
+         <p>Las listas ordenadas van enmarcadas dentro de las etiquetas &lt;<strong>ol</strong>&gt; &lt;/<strong>ol</strong>&gt;. Cada punto de la lista se escribe con la misma etiqueta que en las no numeradas: &lt;<strong>li</strong>&gt;. Pero al ser listas ordenadas los símbolos serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos puntos.</p>
+
+         <p>En las listas ordenadas podemos hacer que el primer punto comience con el número que nosotros queramos. Lo conseguiremos gracias al atributo “value”. Los siguientes puntos que escribamos se generarán automáticamente por orden, partiendo de ese número.</p>
+     
+         <h3>Etiqueta&lt;ol&gt;</h3>
+         <p>Se utiliza la etiqueta html &lt;<strong>ol</strong>&gt; para crear listas ordenadas, entre la etiqueta de apertura y cierre irán los elementos de la lista dentro de una etiqueta &lt;<strong>li</strong>&gt; respectivamencte.</p>
+         <h3>Etiqueta&lt;li&gt;</h3>
+         <p>En cualquier caso la etiqueta &lt;<strong>li</strong>&gt; sirve para indicar los elementos de la lista, independientemente de si son ordenadas o desordenadas.</p>
+
+         <p>Por ejemplo, si queremos que nuestra lista comience por el número 1, sólo deberemos escribir lo siguiente:</p>
+
+         <img src="logo9.png" />
+
+         <ol>
+             <li>Lunes</li>
+             <li>Martes</li>
+             <li>Miércoles</li>
+             <li>Jueves</li>
+             <li>Viernes</li>
+         </ol>    
+        
+          <h2>Cómo poner viñetas en listas de HTML</h2> 
+          <p>Poner viñetas en una lista html es tan fácil como lo veremos a continuación, se trata de poner estilo a nuestro elemento de lista y para ello emplearemos el atributo <mark>STYLE</mark> con unos valores pensados para este fin.</p>
+
+          <h3>Atributo style</h3>
+          <p>Para crear listas con viñetas en HTML utilizamos el atributo <mark>style</mark>, esto indicará que la lista tendrá un estilo especial, emplea una propiedad y en este caso será la propiedad de <mark>list-style-type</mark>  y básicamente hace referencia al tipo de viñeta, finalmente el valor de dicha propiedad determina el tipo de viñeta que se mostrará, en nuestro caso queremos poner viñetas diferentes a los predeterminados ¿verdad? Pues bien, conozcamos los posibles valores que puede tomar y su respectiva descripción.</p>
+          <h3>Valores para tipos de viñeta HTML:</h3>
+          <p>Las listas no ordenadas van dentro de la etiqueta &lt;<strong>ul</strong>&gt; HTML y de su cierre &lt;/<strong>ul</strong>&gt;. Cada punto que queramos añadir a la lista, lo haremos dentro de la etiqueta <li> y su cierre.</p>
+          <p>Si no le indicamos nada a la etiqueta &lt;<strong>li</strong>&gt; HTML, ésta se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto, podemos gracias al atributo “type”.</p>
+            <ul>
+                <li><mark><strong>disc:</strong></mark> Este es el valor predeterminado.</li>
+                <br>
+                <li><mark><strong>circle:</strong></mark> Muestra marcador es un círculo hueco.</li>
+                <br>
+                <li><mark><strong>square:</strong></mark> Muestra marcador es un cuadrado.</li>
+                <br>
+                <li><mark><strong>decimal:</strong></mark> Marcador es un número decimal, que comienza con 1.</li>
+                <br>
+                <li><mark><strong>lower-roman:</strong></mark> Marcador es un número romano en minúscula (i, ii, iii, iv, v, etc.)</li>
+                <br>
+                <li><mark><strong>upper-roman:</strong></mark> El marcador es un número romano en mayúscula (I, II, III, IV, V, etc.)</li>
+             </ul>
+         <p>Además de estos existen muchos más que podemos utilizar, por ejemplo: lower-greek, lower-latin, upper-latin, lower-alpha, upper-alpha, none.</p>
+        
+         <p>Veamos esto en ejemplos para ser más específicos:</p>
+
+         <ul style="list-style-type: circle">
+             <li>Horas</li>
+             <li>Días</li>
+             <li>Meses</li>
+             <li>Años</li>
+         </ul>
+         <ul style="list-style-type: disc">
+             <li>Horas</li>
+             <li>Días</li>
+             <li>Meses</li>
+             <li>Años</li>
+         </ul>
+         <ul style="list-style-type: square">
+             <li>Horas</li>
+             <li>Días</li>
+             <li>Meses</li>
+             <li>Años</li>
+         </ul>
+         <ul style="list-style-type: upper-roman">
+             <li>Horas</li>
+             <li>Días</li>
+             <li>Meses</li>
+             <li>Años</li>
+         </ul>
+         <ul style="list-style-type:lower-latin">
+             <li>Horas</li>
+             <li>Días</li>
+             <li>Meses</li>
+             <li>Años</li>
+         </ul>
+         <img src="logo10.png" />
+       </div>
+    </body>
+</html>

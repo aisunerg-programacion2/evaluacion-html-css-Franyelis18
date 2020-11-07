@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Etiquetas para Tablas en HTML</title>
+      <meta name="description" content="Etiquetas de texto en HTML"/>
+      <meta name="author" content="Franyelis Rodriguez"/>
+      <meta name="keywords" content="Etiquetas de texto html"/> 
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+      <div class="agrupar">
+         <h1 class="titulo">HTML5 y sus características.</h1>
+      
+           <nav class="menu">
+             <a href="Index.html">HTML5 y sus características</a>
+             <br>
+             <a href="Etiquetas de texto en html.html">Formato de texto en HTML</a>
+             <br>
+             <a href="Etiquetas de encabezados y ubicación html.html">Encabezados y Ubicación</a>
+             <br>
+             <a href="Etiquetas para Tablas.html">Tablas en HTML</a>
+             <br>
+             <a href="Etiquetas para numeración y viñetas.html">Numeración y Viñetas en HTML</a>
+             <br>
+             <a href="Etiquetas para formularios y carga de datos en html.html">Formularios y carga de datos en HTML</a>
+           </nav>
+        
+         <h3><i>También podría interesarte las páginas web mencionada arriba ya que contienen más información importante de HTML</i></h3>
+      
+         <h1>Etiquetas HTML de Tablas</h1> 
+         <p>Las <strong>tablas</strong> están incluidas en HTML desde sus primeras versiones y son una forma fantástica de mostrar datos claramente. Además, si las construimos de forma semántica y correctamente, es muy sencillo darle estilos desde CSS y cambiar su diseño con unas cuantas propiedades CSS, puesto que mediante las etiquetas que la componen se puede hacer referencia a cada parte de la misma.</p>
+
+         <h2>Sus etiquetas principales son</h2>
+      
+         <h3>Etiqueta &lt;table&gt;</h3>
+         
+         <p>Señala el inicio y final de una tabla. Sus atributos son:</p>
+         <ul>
+           <li><strong>Align:</strong> Establece la alineación de la tabla o texto mediante ALIGN=LEFT o ALIGN=RIGHT.</li>
+           <br>
+           <li><strong>Bgcolor:</strong> Establece el color de fondo de las celdas de la tabla.</li>
+           <br>
+           <li><strong>Border:</strong> Determina el ancho del borde en pixeles.</li>
+           <br>
+           <li><strong>BorderColor:</strong> Asigna un color al borde.</li>
+           <br>
+           <li><strong>BorderDark:</strong> Determina el color de la parte oscura de un borde de 3 dimensiones.</li>
+           <br>
+           <li><strong>BorderLight:</strong> Asigna el color de la parte clara de un borde de 3 dimensiones.</li>
+           <br>
+           <li><strong>Caption:</strong> Especifica el titulo para la tabla.</li>
+           <br>
+           <li><strong>Cellpadding:</strong> Establece la cantidad de espacio libre junto al contenido de una celda.</li>
+           <br>
+           <li><strong>Cellspacing:</strong> Asigna la cantidad de espacio entre las celdas de una tabla.</li>
+           <br>
+           <li><strong>Width:</strong> Determina el ancho de la tabla en pixeles o en un porcentaje.</li>
+         </ul>
+
+         <div>
+           <h3>Etiqueta &lt;th&gt;</h3>
+           <p>Indica al navegador cliente que exhiba el texto como un encabezado en la primera fila de una tabla. Atributos principales:</p>
+           <ul>
+             <li><strong>Colspan:</strong> Especifica el número de celdas que cubre el encabezado.</li>
+             <br>
+             <li><strong>Align:</strong> Determina la posición del texto del titilo.</li>
+           </ul>
+         </div>
+
+         <div>
+           <h3>Etiqueta &lt;tr&gt;</h3>
+           <p>Indica al navegador que exhiba el texto dentro de una fila; puede también interpretarse como la etiqueta que define filas.</p>
+           <ul>
+              <li><strong>Align:</strong> Alineación del texto/objetos en toda la fila.</li>
+           </ul>
+          </div>
+
+         <div>
+           <h3>Etiqueta &lt;td&gt;</h3>
+           <p>La etiqueta de datos de la tabla, es la que identifica a las columnas o celdas específicas de una tabla. Atributos principales:</p>
+           <ul>
+             <li><strong>Align:</strong> Alineación del texto/objeto de la celda.</li>
+             <li><strong>Bgcolor:</strong> Color de fondo de la celda.</li>
+           </ul>
+          </div>
+
+         <div>
+         <h2>Estructura básica de una Tabla</h2>
+         <p>Una tabla no es otra cosa más que un medio de organizar datos en filas y columnas. Este concepto ha estado presente en nuestra sociedad por un largo período de tiempo y ha sido adoptado por <u>HTML</u> en sus etapas iniciales, como una forma de transmitir información que, de otro modo, no sería comprendida tan fácilmente.</p>
+       
+         <p>En documentos <u>HTML</u> una tabla puede ser considerada, resumidamente, como un grupo de filas donde cada una contiene a un grupo de celdas. Esto es conceptualmente distinto a un grupo de columnas que contiene a un grupo de filas, y esta diferencia tendrá un impacto en la composición y comportamiento de la tabla.</p>
+
+         <p>Como muchas otras estructuras de <u>HTML</u>, las tablas son construidas utilizando elementos. En particular, una tabla básica puede ser declarada usando tres elementos, a saber,&lt;<u>table</u>&gt; (el contenedor principal), &lt;<u>tr</u>&gt; (representando a las filas contenedoras de las celdas) y &lt;<u>td</u>&gt; (representando a las celdas). Dejémoslo más claro con un ejemplo:</p>
+
+         <table border="1">
+           <tr>
+             <td>Celda 1</td>
+             <td>Celda 2</td>
+             <td>Celda 3</td>
+           </tr>
+
+           <tr>
+             <td>Celda 4</td>
+             <td>Celda 5</td>
+             <td>Celda 6</td>
+           </tr>
+         </table>
+         <br>
+         <img src="logo6.png" />
+
+        <p>A la tabla se le han aplicado estilos mediante CSS para mejorar su comprensión y legibilidad. No se deberían esperar estos resultados en tablas sin atributos presentacionales asignados.</p>
+
+        <p>Puedes ver claramente en el ejemplo anterior, el concepto de filas conteniendo columnas del que hablamos previamente. Aquí se hace evidente como las celdas, que han sido numeradas de acuerdo a su aparición en el código, siguen una secuencia en la representación que va de izquierda a derecha, una fila por vez. Esto tendrá implicaciones futuras, especialmente cuando se trate el tema de unificación de celdas y agrupamiento.</p>
+       </div>
+
+       <div>
+        <h2>Celdas de encabezado</h2>
+        <p>Ahora que ya hemos tratado la estructura básica de una tabla, es hora de comenzar a crear tablas más útiles.</p>
+
+        <p>Una celda de encabezado es un tipo especial de celda utilizada para organizar y categorizar otras celdas en la tabla. Dicho esto, es diícil imaginar una tabla donde una celda de encabezado no tenga utilidad. Casi cualquier tabla puede beneficiarse de un grupo de celdas de encabezado bien ubicado.</p>
+
+        <p>En el siguiente ejemplo, construiremos una tabla para mostrar información acerca del clima en los próximos días. Aquí, las celdas de encabezado, representadas por el <u>elemento</u> &lt;<u>th</u>&gt;, son ubicadas en la primera fila de la tabla, encima de las celdas comunes.</p>
+
+        <table border= "2">
+          <tr>
+            <th>Hoy</th>
+            <th>Mañana</th>
+            <th>Martes</th>
+          </tr>
+          
+          <tr>
+            <td>Soleado</td> 
+            <td>Mayormente soleado</td>
+            <td>Parcialmente nublado</td>
+          </tr>
+
+          <tr>
+            <td>19°C</td>
+            <td>17°C</td>
+            <td>12°C</td>
+          </tr>
+
+          <tr>
+            <td>E 13 km/h</td>
+            <td>E 11 km/h</td>
+            <td>S 16 km/h</td>
+          </tr>
+        </table>
+        <br>
+        <img src="logo7.png" />
+
+        <p>Es fácil ver aquí cómo cada celda de encabezado en la tabla, provee información para el resto de las celdas en la columna a la que pertenece. Algunos agentes, como los navegadores de voz, hacen el mismo análisis cuando deben informar al usuario qué celda de encabezado está asociada a una celda en particular. Pero en algunos casos, las ambigüedades necesitan ser evitadas y es por este motivo que <u>HTML</u> provee algunos atributos como <mark>scope</mark>.</p>
+       </div>
+
+        <h2>El atributo scope</h2>
+        <p>El atributo <mark>scope</mark> provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado. Este atributo solo puede ser declarado en una celda de encabezado y tomar los valores "col", "row", "colgroup" y "rowgroup". Los valores "col" y "row" indican que la celda de encabezado provee información para el resto de las celdas en la columna o fila (respectivamente) en que está presente. Los otros dos valores tendrán sentido más adelante en este tutorial.</p>
+
+        <p>En el siguiente ejemplo, la tabla presentada anteriormente ha sido mejorada con más celdas de encabezado, con el fin de aumentar la legibilidad. Aquí, la celda en la esquina superior izquierda de la tabla, proveería información ambigua si el atributo <mark>scope</mark> no estuviera presente. En otras palabras, afectaría a las celdas en su columna, así como a las celdas en su fila. La presencia del atributo <mark>scope</mark> ha dejado en claro que las celdas afectadas por este encabezado son aquellas en la misma fila.</p>
+
+        <table border="1">
+          <tr>
+            <th scope="row">Día</th>
+            <th>Hoy</th>
+            <th>Mañana</th>
+            <th>Martes</th>
+          </tr>
+
+          <tr>
+            <th>Condiciones</th>
+            <td>Soleado</td>
+            <td>Mayormente soleado</td>
+            <td>Parcialmente nublado</td>
+          </tr>
+
+          <tr>
+            <th>Temperatura</th>
+            <td>19°C</td>
+            <td>17°C</td>
+            <td>12°C</td>
+          </tr>
+
+          <tr>
+            <th>Vientos</th>
+            <td>E 13 km/h</td>
+            <td>E 11 km/h</td>
+            <td>E 16 km/h</td>
+          </tr>
+        </table>
+        <br>
+        <img src="logo8.png" />
+    </div>
+
+    </body>
+</html>
